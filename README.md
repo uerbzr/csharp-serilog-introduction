@@ -1,32 +1,35 @@
-# C# Serilog Introduction
+# C# Serilog Introduction Course
 
+## [1 - Introduction to Logging](INTRODUCTION-TO-LOGGING.md)
 
+- Quick chat Logging
+- Quick look at the in built logger and limitations
 
-## How to Choose a Logging Provider
+## [2 - Getting started with Serilog](GETTING-STARTED.md)
 
-- **For Basic Needs**:
-  - Use Microsoft.Extensions.Logging for small-scale applications.
-- **For Structured Logging**:
-  - Use Serilog for queryable, structured data logs.
-- **For Flexibility**:
-  - Use NLog for more configurable options and wider target support.
-- **For Legacy Systems**:
-  - Use log4net for existing older applications.
+- Build a webapi project with logging
+- Add Serilog
 
----
+## [3 - Sinks](SERILOG-SINKS.md)
 
-## Introduction to Serilog
+- Add other sinks
 
-### Why Serilog?
+## Resources
 
-- Simplifies logging with a focus on **structured data** and human-readable logs.
-- Perfect for debugging during development and monitoring applications in production.
+- [Official Microsoft Logging](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/logging/?view=aspnetcore-9.0)
+- [Serilog Documentation](https://serilog.net/)
+- [Available Sinks](https://github.com/serilog/serilog/wiki/provided-sinks)
+- [Log Levels](4-LOGLEVELS.md)
 
-### Key Features:
+## Useful Commands
 
-- **Multiple Sinks**: Outputs logs to the console, files, databases, or cloud services.
-- **Structured Logging**: Includes contextual information (e.g., `UserId`, `TransactionId`) in logs.
-- **Rich Ecosystem**: Integrates with Seq, Kibana, Azure, and other tools for advanced log analysis.
+- `mkdir project-name` create directory
+- `cd project-name` cd into directory
 
----
-
+- Setup a .Net Solution
+  - `dotnet new sln --name workshop` creates solution file
+  - `dotnet new webapi --name workshop.webapi` creates webapi project
+  - `dotnet sln add **/*.csproj` adds all csprojs to sln
+  - `start devenv workshop.sln` to open in Visual Studio
+- `dotnet new gitignore`
+- `touch README.md` always put a readme in there
