@@ -9,9 +9,12 @@
 
 - Quick runthrough
 
-## [4 - Getting started with Serilog](GETTING-STARTED.md)
+## 4 - [Getting started with Serilog](https://github.com/uerbzr/csharp-webapi)
 
-- Build a webapi project with logging
+- Build a webapi project with logging either:
+	- From Scratch ? 
+	- [Using the provided solution](https://github.com/uerbzr/csharp-webapi) ?
+	
 - Add Serilog to output to Console
 
 ## [5 - Sinks](SERILOG-SINKS.md)
