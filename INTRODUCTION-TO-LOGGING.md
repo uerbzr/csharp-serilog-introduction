@@ -41,6 +41,7 @@ Here are some popular logging libraries and frameworks available in .NET:
 ---
 
 ## 3. [Log Levels](LOGLEVELS.md)
+
 # Serilog Log Levels
 
 | **Level**       | **Value** | **Method Name**     | **Description**                                                     | **Use Case**                                      |
@@ -63,7 +64,3 @@ Here are some popular logging libraries and frameworks available in .NET:
 | **Error**       | 4     | `LogError`       | Logs errors that prevent the application from functioning correctly.               |
 | **Critical**    | 5     | `LogCritical`    | Logs critical issues causing application failure or requiring immediate attention. |
 | **None**        | 6     | N/A              | Disables logging entirely.                                                         |
-
-## BUILD
-
-Lets take a look at the out of the box logging in a webapi project..

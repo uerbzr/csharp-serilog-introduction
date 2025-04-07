@@ -6,12 +6,14 @@ Serilog **sinks** are output destinations for log events. They enable you to wri
 
 - **File Sink**: Writes logs to disk files, ideal for permanent records.
 - **Console Sink**: Outputs logs to the console, useful for debugging.
+- **SQL Server**: Connects with Azure Application Insights for performance telemetry or direct to your db
 - **Seq Sink**: Sends logs to a Seq server for structured querying and visualization.
 - **Elasticsearch Sink**: Integrates with the ELK stack for powerful searching and visualization.
-- **SQL Server**: Connects with Azure Application Insights for performance telemetry.
 
 ## Resources
 
 - See all Sinks [here](https://github.com/serilog/serilog/wiki/Provided-Sinks)
 - Learn more on [Serilog's Official Site](https://serilog.net/).
 - Explore the list of sinks on the [Serilog GitHub Wiki](https://github.com/serilog/serilog/wiki/Provided-Sinks).
+
+[Return](https://www.github.com/uerbzr/csharp-serilog-introduction)
