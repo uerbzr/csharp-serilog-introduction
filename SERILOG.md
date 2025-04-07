@@ -9,6 +9,6 @@
 
 - **Multiple Sinks**: Outputs logs to the console, files, databases, or cloud services.
 - **Structured Logging**: Includes contextual information (e.g., `UserId`, `TransactionId`) in logs.
-- **Rich Ecosystem**: Integrates with Seq, Kibana, Azure, and other tools for advanced log analysis.
+- **Rich Ecosystem**: Integrates with lots of 3rd party tech via Sinks e.g. database
 
 ## Lets start building...
