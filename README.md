@@ -5,14 +5,18 @@
 - Quick chat Logging
 - Quick look at the in built logger and limitations
 
-## [2 - Getting started with Serilog](GETTING-STARTED.md)
+## [2 - Introduction to Serilog](SERILOG.md)
+
+- Quick runthrough
+
+## [4 - Getting started with Serilog](GETTING-STARTED.md)
 
 - Build a webapi project with logging
-- Add Serilog
+- Add Serilog to output to Console
 
-## [3 - Sinks](SERILOG-SINKS.md)
+## [5 - Sinks](SERILOG-SINKS.md)
 
-- Add other sinks
+- Add other sinks e.g. File
 
 ## Resources
 
