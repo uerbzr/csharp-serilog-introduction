@@ -64,3 +64,5 @@ Here are some popular logging libraries and frameworks available in .NET:
 | **Error**       | 4     | `LogError`       | Logs errors that prevent the application from functioning correctly.               |
 | **Critical**    | 5     | `LogCritical`    | Logs critical issues causing application failure or requiring immediate attention. |
 | **None**        | 6     | N/A              | Disables logging entirely.                                                         |
+
+[Return](https://www.github.com/uerbzr/csharp-serilog-introduction)

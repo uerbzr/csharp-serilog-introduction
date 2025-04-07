@@ -1,4 +1,6 @@
-## Serilog Logging Levels
+## 3. [Log Levels](LOGLEVELS.md)
+
+# Serilog Log Levels
 
 | **Level**       | **Value** | **Method Name**     | **Description**                                                     | **Use Case**                                      |
 | --------------- | --------- | ------------------- | ------------------------------------------------------------------- | ------------------------------------------------- |
@@ -9,14 +11,16 @@
 | **Error**       | 4         | `Log.Error()`       | Logs errors or exceptions where the application can still continue. | Failures requiring investigation and resolution.  |
 | **Fatal**       | 5         | `Log.Fatal()`       | Critical issues leading to application termination.                 | Application crashes or irrecoverable errors.      |
 
-## Microsoft Logging Levels
+# Microsoft Log Levels for ASP.NET Core
 
-| **Level**       | **Value** | **Method Name**    | **Description**                                                                |
-| --------------- | --------- | ------------------ | ------------------------------------------------------------------------------ |
-| **Trace**       | 0         | `LogTrace()`       | Used for very detailed debugging or tracing information.                       |
-| **Debug**       | 1         | `LogDebug()`       | Diagnostic information useful for debugging purposes.                          |
-| **Information** | 2         | `LogInformation()` | General application events to track the flow of execution.                     |
-| **Warning**     | 3         | `LogWarning()`     | Indicates potential issues or unexpected behaviors.                            |
-| **Error**       | 4         | `LogError()`       | Logs errors or exceptions where the application can still continue.            |
-| **Critical**    | 5         | `LogCritical()`    | Logs fatal errors that require immediate attention or application termination. |
-| **None**        | -1        | N/A                | Disables logging entirely for the category.                                    |
+| Log Level       | Value | Method Name      | Description                                                                        |
+| --------------- | ----- | ---------------- | ---------------------------------------------------------------------------------- |
+| **Trace**       | 0     | `LogTrace`       | Logs detailed information for diagnosing issues. Typically used for debugging.     |
+| **Debug**       | 1     | `LogDebug`       | Logs information useful for debugging. Less detailed than Trace.                   |
+| **Information** | 2     | `LogInformation` | Logs general application flow and state. Suitable for production environments.     |
+| **Warning**     | 3     | `LogWarning`     | Logs potential issues or unexpected events that don't interrupt the application.   |
+| **Error**       | 4     | `LogError`       | Logs errors that prevent the application from functioning correctly.               |
+| **Critical**    | 5     | `LogCritical`    | Logs critical issues causing application failure or requiring immediate attention. |
+| **None**        | 6     | N/A              | Disables logging entirely.                                                         |
+
+[Return](https://www.github.com/uerbzr/csharp-serilog-introduction)
