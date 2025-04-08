@@ -29,6 +29,7 @@ app.UseHttpsRedirection();
 
 app.ConfigureWeatherEndpoints();
 app.ConfigureSeedEndpoints();
+app.ConfigureFatalEndpoint();
 app.UseSerilogRequestLogging(); // IMPORTANT
 app.Run();
 

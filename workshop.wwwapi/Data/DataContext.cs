@@ -10,5 +10,6 @@ namespace workshop.wwwapi.Data
         }
 
         public DbSet<WeatherForecast> WeatherForecasts { get; set; }
+
     }
 }

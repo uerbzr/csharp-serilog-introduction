@@ -14,7 +14,7 @@ namespace workshop.wwwapi.Endpoints
             weather.MapGet("/", async (DataContext db, ILogger<WeatherForecast> logger) =>
             {
                 var entities = await db.WeatherForecasts.ToListAsync();
-                logger.LogInformation("called GET weather");
+                logger.LogInformation("{@entities}", entities);
                 return Results.Ok(entities);
             });
         }
