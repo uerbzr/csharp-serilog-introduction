@@ -27,7 +27,7 @@
 - [Available Sinks](https://github.com/serilog/serilog/wiki/provided-sinks)
 - [Log Levels](4-LOGLEVELS.md)
 
-## Useful Commands
+## Useful Commands / Resources
 
 - `mkdir project-name` create directory
 - `cd project-name` cd into directory
@@ -39,3 +39,28 @@
   - `start devenv workshop.sln` to open in Visual Studio
 - `dotnet new gitignore`
 - `touch README.md` always put a readme in there
+
+## SQL Server Sink:
+
+Just install the Serilog.Sinks.MSSqlServer sink and add this to the config:
+
+```yaml
+{
+  "Name": "MSSqlServer",
+  "Args":
+    {
+      "connectionString": "Server=localhost;Database=serilog_logging;User Id=sa;Password=PASSWORD;TrustServerCertificate=True;",
+      "tableName": "Logs",
+      "autoCreateSqlTable": true,
+      "restrictedToMinimumLevel": "Information",
+      "columnOptionsSection":
+        {
+          "additionalColumns":
+            [
+              { "ColumnName": "UserName", "DataType": "NVarChar" },
+              { "ColumnName": "MachineName", "DataType": "NVarChar" },
+            ],
+        },
+    },
+}
+```
