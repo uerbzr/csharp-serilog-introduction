@@ -9,15 +9,14 @@
 
 - Quick runthrough
 
-## 4 - [Getting started with Serilog](https://github.com/uerbzr/csharp-webapi)
+## [3- Getting started with Serilog](https://github.com/uerbzr/csharp-webapi)
 
 - Build a webapi project with logging either:
-	- From Scratch ? 
-	- [Using the provided solution](https://github.com/uerbzr/csharp-webapi) ?
-	
+  - From Scratch ?
+  - [Using the provided solution](https://github.com/uerbzr/csharp-webapi) ?
 - Add Serilog to output to Console
 
-## [5 - Sinks](SERILOG-SINKS.md)
+## [4 - Sinks](SERILOG-SINKS.md)
 
 - Add other sinks e.g. File
 
