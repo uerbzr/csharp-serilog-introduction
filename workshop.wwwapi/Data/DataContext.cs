@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using workshop.webapi.Models;
+using workshop.wwwapi.Models;
 
-namespace workshop.webapi.Data
+namespace workshop.wwwapi.Data
 {
     public class DataContext : DbContext
     {
@@ -10,6 +10,5 @@ namespace workshop.webapi.Data
         }
 
         public DbSet<WeatherForecast> WeatherForecasts { get; set; }
-
     }
 }

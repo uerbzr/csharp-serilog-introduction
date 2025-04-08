@@ -1,7 +1,7 @@
-﻿using workshop.webapi.Data;
-using workshop.webapi.Models;
+﻿using workshop.wwwapi.Data;
+using workshop.wwwapi.Models;
 
-namespace workshop.webapi.Endpoints
+namespace workshop.wwwapi.Endpoints
 {
     public static class WeatherData
     {
@@ -18,12 +18,12 @@ namespace workshop.webapi.Endpoints
                         new WeatherForecast { Date = DateOnly.FromDateTime(DateTime.Now.AddDays(2)), TemperatureC = 15, Summary = "Cool" }
                     });
                     await db.SaveChangesAsync();
-                    
-                    return Results.Ok("Database had data");
+
+                    return Results.Ok("Database seeded");
                 }
                 else
                 {
-                    return Results.Ok("Database seeded");
+                    return Results.Ok("Database had data");
                 }
             });
         }

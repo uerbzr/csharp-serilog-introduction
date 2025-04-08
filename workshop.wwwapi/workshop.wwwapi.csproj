@@ -10,7 +10,10 @@
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="9.0.3" />
-    <PackageReference Include="Scalar.AspnetCore" Version="2.1.6" />
+    <PackageReference Include="Scalar.AspnetCore" Version="2.1.7" />
+    <PackageReference Include="Serilog.AspnetCore" Version="9.0.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="6.0.0" />
+    <PackageReference Include="Serilog.Sinks.Debug" Version="3.0.0" />
     <PackageReference Include="Swashbuckle.AspnetCore" Version="8.1.0" />
   </ItemGroup>
 
